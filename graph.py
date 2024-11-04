@@ -6,7 +6,7 @@ from nodes import assistant, listener, web_search_solution, decide_to_provide_so
 import sqlite3 
 
 conn = sqlite3.connect(database=':memory' , check_same_thread=False)
-memory = SqliteSaver(conn=conn)
+memory = SqliteSaver(conn=conn, )
 
 builder = StateGraph(AssistantState)
 
